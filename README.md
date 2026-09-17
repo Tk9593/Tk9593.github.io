@@ -20,4 +20,4 @@ This portfolio includes the HTML and CSS projects I completed during the course.
 
 ## Website
 
-My portfolio website is published using GitHub Pages.
+My portfolio website is published using GitHub Pages

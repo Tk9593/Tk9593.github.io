@@ -2,22 +2,27 @@
 
 ## About
 
-This is my portfolio website created as part of my HTML and CSS course. It contains information about me, my projects, and the skills I have learned.
+This repository contains my original HTML and CSS portfolio and an upgraded version with JavaScript features. It showcases my projects and the web development skills I have learned.
 
 ## Projects
 
-### HTML and CSS Projects
+### HTML and CSS Portfolio
 
-This portfolio includes the HTML and CSS projects I completed during the course. These projects helped me practice creating webpages, organizing content with HTML, and styling webpages with CSS.
+I created a personal portfolio using HTML to organize the content and CSS to style the pages.
+
+### JavaScript Portfolio Upgrade
+
+I enhanced my portfolio with an image slideshow and a popup contact form using JavaScript. The upgraded files are stored in the Portfolio_Upgrade folder.
 
 ## Skills
 
 - HTML
 - CSS
+- JavaScript
 - Git
 - GitHub
 - GitHub Pages
 
 ## Website
 
-My portfolio website is published using GitHub Pages
+[View my upgraded portfolio](https://tk9593.github.io/Portfolio_Upgrade/)

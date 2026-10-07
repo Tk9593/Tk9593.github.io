@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taranjit Kaur | Portfolio</title>
+    <link rel="stylesheet" href="stylesheet/portfolio.css">
+</head>
+
+<body class="Background">
+
+    <!-- Navigation -->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a href="#Contact" onclick="openForm(); return false;">Contact</a>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Background video -->
+    <div id="Home">
+        <video autoplay muted loop playsinline id="Typing_Video">
+            <source src="images/video/Typing.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- Introduction -->
+    <div class="Video_Text">
+        <h1 class="white-text">Taranjit Kaur's Portfolio</h1>
+
+        <p class="center">
+            <q>The computer programmer is a creator of universes
+                for which he alone is the lawgiver.</q>
+            <br>
+            — Joseph Weizenbaum
+            <br><br>
+            My name is Taranjit Kaur. Welcome to my portfolio website.
+            Here you can learn about my background, skills, and projects.
+            <br><br>
+            Thank you for stopping by!
+        </p>
+    </div>
+    <!-- Slideshow -->
+<section id="Slideshow">
+    <h1>My Interest in Technology</h1>
+
+    <div class="portfolio-slideshow">
+        <div class="portfolio-slide">
+            <img src="images/photo1.jpg"
+                 alt="Illustration of Java programming screens">
+            <p class="center">Exploring the world of programming</p>
+        </div>
+
+        <div class="portfolio-slide">
+            <img src="images/photo2.jpg"
+                 alt="Infographic showing Python developer skills">
+            <p class="center">Discovering skills for future learning</p>
+        </div>
+
+        <div class="portfolio-slide">
+            <img src="images/photo3.jpeg"
+                 alt="A person writing code on a laptop">
+            <p class="center">Building my coding skills through practice</p>
+        </div>
+
+        <button type="button" onclick="changeSlide(-1)">
+            Previous
+        </button>
+        <button type="button" onclick="changeSlide(1)">
+            Next
+        </button>
+    </div>
+</section>
+
+    <!-- About -->
+    <div class="Row" id="About">
+        <div class="Column_2">
+            <img src="images/tech.jpg" alt="Technology and coding">
+        </div>
+
+        <div class="Column_1">
+            <h1>About</h1>
+
+            <p>
+                I am a software development student learning HTML,
+                CSS, JavaScript, and Bootstrap. I enjoy building
+                interactive websites and developing my programming skills.
+                <br><br>
+                As a mother of two, I enjoy spending time with my
+                family and traveling.
+                <br><br>
+                Explore my projects on GitHub to see my progress.
+            </p>
+        </div>
+    </div>
+
+    <!-- GitHub -->
+    <div class="Row" id="GitHub">
+        <div class="Column_1">
+            <h1>GitHub</h1>
+
+            <p>
+                Explore my HTML, CSS, JavaScript, and Bootstrap
+                projects on GitHub. These projects show my progress
+                as I learn software and web development.
+            </p>
+
+            <p class="center">
+                <a href="https://github.com/Tk9593"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Taranjit Kaur's GitHub
+                </a>
+            </p>
+
+            <p class="center">
+    <a href="https://www.linkedin.com/in/taranjit-nagi-9790a8b6/"
+       target="_blank"
+       rel="noopener noreferrer">
+        Taranjit Kaur's LinkedIn
+    </a>
+</p>
+        </div>
+
+        <div class="Column_2">
+            <a href="https://github.com/Tk9593"
+               target="_blank"
+               rel="noopener noreferrer">
+                <img src="images/GitHub.png" alt="GitHub logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div class="Row" id="Contact">
+        <div class="Column_2 Column_tall">
+            <img src="images/flowers.jpg" alt="Pink tulips">
+        </div>
+
+        <div class="Column_1 Column_tall">
+            <h1>Get in Touch</h1>
+
+            <p class="center">
+                Interested in my projects or learning journey?
+                Use the Contact Me button to open my contact form.
+            </p>
+
+            <button type="button" onclick="openForm()">
+                Contact Me
+            </button>
+        </div>
+    </div>
+
+    <!-- Popup contact form -->
+    <div class="form-popup" id="myForm">
+        <h1>Contact</h1>
+
+        <!-- Test form: message delivery is not connected yet. -->
+        <form onsubmit="event.preventDefault(); alert('Your form is valid. Message delivery is not connected yet.');">
+            <label for="contactName">Name:</label>
+            <input type="text"
+                   id="contactName"
+                   name="name"
+                   placeholder="Please enter your name"
+                   required>
+
+            <label for="contactEmail">Email:</label>
+            <input type="email"
+                   id="contactEmail"
+                   name="email"
+                   placeholder="Please enter your email"
+                   required>
+
+            <label for="contactMessage">Message:</label>
+            <textarea id="contactMessage"
+                      name="message"
+                      rows="4"
+                      placeholder="Please write your message"
+                      required></textarea>
+
+            <input type="submit" value="SUBMIT">
+
+            <button type="button" onclick="closeForm()">
+                Close
+            </button>
+        </form>
+    </div>
+
+    <!-- Floating contact button -->
+    <button type="button"
+            class="Pop_Up_Button"
+            onclick="openForm()">
+        Contact Me
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <p class="center">&copy; 2026 Taranjit Kaur</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
